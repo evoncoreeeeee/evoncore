@@ -1,0 +1,499 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Services — EVONCORE | Amazon, TikTok Shop, Walmart, eBay, Shopify, Ads, Sourcing, Fulfilment, SEO</title>
+<meta name="description" content="Full-stack ecommerce management across every major channel — marketplace operations, paid advertising, product sourcing, fulfilment and SEO.">
+<link rel="icon" href="assets/icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700;800&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<style>
+  .svc-nav{ position:sticky; top:86px; z-index:40; background:#FFFFFF; border-bottom:1px solid var(--line); padding:14px var(--pad); overflow-x:auto; box-shadow: 0 4px 14px rgba(79, 70, 229, 0.05); }
+  .svc-nav-inner{ display:flex; gap:10px; max-width:var(--max); margin:0 auto; }
+  .svc-nav a{ font-family:var(--mono); font-size:12px; text-transform:uppercase; letter-spacing:.05em; color:var(--muted); padding:8px 14px; border:1px solid rgba(79, 70, 229, 0.2); border-radius:100px; white-space:nowrap; transition:.2s; background: #F8FAFC; font-weight: 500; }
+  .svc-nav a:hover{ color:var(--orange); border-color:var(--orange); background: #FFFFFF; box-shadow: 0 2px 8px rgba(79, 70, 229, 0.12); }
+  .svc-block{ padding:88px 0; border-bottom:1px solid var(--line); scroll-margin-top:130px; }
+  .svc-block:nth-child(even){ background:var(--ink-2); }
+  .svc-top{ display:flex; justify-content:space-between; gap:50px; flex-wrap:wrap; margin-bottom:48px; }
+  .svc-top h2{ max-width:680px; color: var(--black); }
+  .svc-top .lede{ max-width:420px; font-size:15.5px; color: var(--muted); }
+  .svc-stats{ display:grid; grid-template-columns:repeat(6,1fr); gap:1px; background:var(--line); border:1px solid var(--line); margin:40px 0; border-radius: var(--radius-sm); overflow: hidden; }
+  .svc-stats .s{ background:#FFFFFF; padding:22px 16px; }
+  .svc-block:nth-child(even) .svc-stats .s{ background:#F8FAFC; }
+  .svc-stats .s .n{ font-family:var(--mono); color:var(--orange); font-size:20px; font-weight:600; display:block; }
+  .svc-stats .s .l{ font-family:var(--mono); font-size:10.5px; color:var(--muted); text-transform:uppercase; letter-spacing:.03em; margin-top:6px; display:block; line-height:1.4; }
+  @media (max-width:980px){ .svc-stats{ grid-template-columns:repeat(3,1fr); } }
+  @media (max-width:560px){ .svc-stats{ grid-template-columns:repeat(2,1fr); } }
+  .mini-process{ display:grid; grid-template-columns:repeat(4,1fr); gap:24px; margin-top:36px; }
+  .mini-process .mp{ border-left:2px solid var(--orange); padding-left:16px; }
+  .mini-process .mp .k{ font-family:var(--mono); color:var(--orange); font-size:12px; }
+  .mini-process .mp h4{ font-size:15px; margin:8px 0 6px; color: var(--black); }
+  .mini-process .mp p{ font-size:13.5px; color: var(--muted); }
+  @media (max-width:880px){ .mini-process{ grid-template-columns:1fr 1fr; } }
+  @media (max-width:560px){ .mini-process{ grid-template-columns:1fr; } }
+  .incl-list{ display:grid; grid-template-columns:1fr 1fr; gap:14px 40px; margin-top:30px; }
+  .incl-list li{ display:flex; gap:12px; font-size:14.5px; color:var(--muted); }
+  .incl-list li::before{ content:'→'; color:var(--orange); flex:none; }
+  .incl-list b{ color:var(--black); font-weight:600; }
+  @media (max-width:700px){ .incl-list{ grid-template-columns:1fr; } }
+</style>
+</head>
+<body>
+
+<nav class="nav">
+  <a href="index.html" class="nav-logo"><img src="assets/logo.png" alt="EVONCORE Logo"><span class="brand-name">EVON<span>CORE</span></span></a>
+  <ul class="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li class="has-dropdown">
+      <a href="services.html" class="dropdown-toggle active">Services <svg class="chevron" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></a>
+      <div class="dropdown-menu">
+        <div class="dropdown-grid">
+          <a href="services.html#amazon" class="dropdown-item">
+            <span class="icon">📦</span>
+            <div>
+              <strong class="title">Amazon Operations</strong>
+              <span class="desc">FBA, Seller Central & PPC</span>
+            </div>
+          </a>
+          <a href="services.html#tiktok" class="dropdown-item">
+            <span class="icon">🎵</span>
+            <div>
+              <strong class="title">TikTok Shop</strong>
+              <span class="desc">Creator Commerce & Live Sales</span>
+            </div>
+          </a>
+          <a href="services.html#walmart" class="dropdown-item">
+            <span class="icon">🛒</span>
+            <div>
+              <strong class="title">Walmart & eBay</strong>
+              <span class="desc">Multi-channel marketplace</span>
+            </div>
+          </a>
+          <a href="services.html#shopify" class="dropdown-item">
+            <span class="icon">🛍️</span>
+            <div>
+              <strong class="title">Shopify Stores</strong>
+              <span class="desc">DTC storefront & CRO</span>
+            </div>
+          </a>
+          <a href="services.html#ads" class="dropdown-item">
+            <span class="icon">⚡</span>
+            <div>
+              <strong class="title">Performance Ads</strong>
+              <span class="desc">PPC, Meta & TikTok Ads</span>
+            </div>
+          </a>
+          <a href="services.html#sourcing" class="dropdown-item">
+            <span class="icon">🏭</span>
+            <div>
+              <strong class="title">Sourcing & Supply</strong>
+              <span class="desc">Global supplier management</span>
+            </div>
+          </a>
+          <a href="services.html#fulfilment" class="dropdown-item">
+            <span class="icon">🚚</span>
+            <div>
+              <strong class="title">Fulfilment</strong>
+              <span class="desc">3PL & logistics operations</span>
+            </div>
+          </a>
+          <a href="services.html#seo" class="dropdown-item">
+            <span class="icon">🔍</span>
+            <div>
+              <strong class="title">Ecommerce SEO</strong>
+              <span class="desc">Organic search & rankings</span>
+            </div>
+          </a>
+        </div>
+        <div class="dropdown-footer">
+          <a href="services.html">Explore All Services &rarr;</a>
+        </div>
+      </div>
+    </li>
+    <li><a href="portfolio.html">Results</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+  <div class="nav-cta">
+    <a href="contact.html" class="btn btn-outline">Book a Call</a>
+    <button class="nav-burger" aria-label="Menu"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+
+<header class="page-hero">
+  <p class="crumb">Home <span>/</span> Services</p>
+  <h1>Nine disciplines. One connected operation.</h1>
+  <p class="lead">Most agencies pick one lane. We manage the full ecosystem — every channel feeding into the next, every decision made with visibility across the whole operation.</p>
+</header>
+
+<div class="svc-nav">
+  <div class="svc-nav-inner">
+    <a href="#amazon">Amazon</a>
+    <a href="#tiktok">TikTok Shop</a>
+    <a href="#walmart">Walmart</a>
+    <a href="#ebay">eBay</a>
+    <a href="#shopify">Shopify</a>
+    <a href="#ads">Paid Ads</a>
+    <a href="#sourcing">Sourcing</a>
+    <a href="#fulfilment">Fulfilment</a>
+    <a href="#seo">SEO</a>
+  </div>
+</div>
+
+<!-- AMAZON -->
+<section class="svc-block" id="amazon">
+  <div class="wrap">
+    <div class="svc-top reveal">
+      <div>
+        <p class="eyebrow">Marketplace · 01</p>
+        <h2>Amazon Account Management</h2>
+      </div>
+      <p class="lede">We run the store. You bank the revenue. EVONCORE takes full control of your Amazon account from day one — listings, ads, inventory, content, account health. All of it.</p>
+    </div>
+    <div class="svc-stats reveal">
+      <div class="s"><span class="n">$12M+</span><span class="l">Revenue managed</span></div>
+      <div class="s"><span class="n">4x</span><span class="l">Avg growth / 12mo</span></div>
+      <div class="s"><span class="n">98%</span><span class="l">Account health rate</span></div>
+      <div class="s"><span class="n">48hr</span><span class="l">To first live changes</span></div>
+      <div class="s"><span class="n">62%</span><span class="l">Avg ACoS reduction</span></div>
+      <div class="s"><span class="n">340%</span><span class="l">Organic rank lift</span></div>
+    </div>
+    <div class="mini-process reveal">
+      <div class="mp"><span class="k">01</span><h4>Audit & category analysis</h4><p>Listing gaps, wasted spend, keyword blindspots and account health risks — found before we touch anything.</p></div>
+      <div class="mp"><span class="k">02</span><h4>Revenue-first strategy</h4><p>A 90-day roadmap targeting the highest-impact actions first.</p></div>
+      <div class="mp"><span class="k">03</span><h4>Full daily execution</h4><p>Listings optimized, ads refined daily, inventory planned, account health monitored.</p></div>
+      <div class="mp"><span class="k">04</span><h4>Scale & raise the ceiling</h4><p>New keywords, new ad types, new product opportunities, every month.</p></div>
+    </div>
+    <ul class="incl-list reveal">
+      <li><b>Listings built to rank and sell</b> — titles, bullets and backend keywords on real search data, continuously tested.</li>
+      <li><b>Ads that compound</b> — Sponsored Products, Brands and Display, refined daily.</li>
+      <li><b>Inventory that never catches you off guard</b> — demand forecasting and FBA planning.</li>
+      <li><b>A Buy Box strategy</b> that wins without eroding margin.</li>
+      <li><b>Reviews managed the right way</b> — compliant, professional, systematic.</li>
+      <li><b>Account health on permanent watch</b> — no suspensions, no surprises.</li>
+    </ul>
+    <p style="margin-top:36px"><a href="contact.html" class="btn btn-solid">Book a Free Strategy Call →</a></p>
+  </div>
+</section>
+
+<!-- TIKTOK -->
+<section class="svc-block" id="tiktok">
+  <div class="wrap">
+    <div class="svc-top reveal">
+      <div>
+        <p class="eyebrow">Marketplace · 02</p>
+        <h2>TikTok Shop Automation</h2>
+      </div>
+      <p class="lede">Last year TikTok Shop changed more bank accounts than any platform in ecommerce history. EVONCORE builds and runs your shop from the ground up — listings, creators, ads, content and order management.</p>
+    </div>
+    <div class="svc-stats reveal">
+      <div class="s"><span class="n">$8M+</span><span class="l">Generated</span></div>
+      <div class="s"><span class="n">3x</span><span class="l">Growth / 90 days</span></div>
+      <div class="s"><span class="n">200+</span><span class="l">Creator partnerships</span></div>
+      <div class="s"><span class="n">70%</span><span class="l">Profitable within 60d</span></div>
+      <div class="s"><span class="n">4.8</span><span class="l">Avg shop rating</span></div>
+      <div class="s"><span class="n">14d</span><span class="l">To first content live</span></div>
+    </div>
+    <div class="mini-process reveal">
+      <div class="mp"><span class="k">01</span><h4>Category & creator intelligence</h4><p>What's selling, who's buying, which creators convert — data, not guesswork.</p></div>
+      <div class="mp"><span class="k">02</span><h4>Shop build & strategy</h4><p>Product selection, pricing psychology, listing structure, all built for conversion.</p></div>
+      <div class="mp"><span class="k">03</span><h4>Creators, content & ads live</h4><p>Recruited, briefed, monitored — underperformers replaced, winners scaled.</p></div>
+      <div class="mp"><span class="k">04</span><h4>The compounding effect</h4><p>More content, more creators, more sales history — the algorithm pushes harder for free.</p></div>
+    </div>
+    <ul class="incl-list reveal">
+      <li><b>A shop built for buyers</b> — purchase-intent titles, conversion-led pricing.</li>
+      <li><b>A creator pipeline that never stops selling</b> — not a list, a managed system.</li>
+      <li><b>Shop ads that compound content</b> — Spark, In-Feed and Shopping Ads.</li>
+      <li><b>Content that sells, not just entertains</b> — briefs built around commercial hooks.</li>
+      <li><b>Fulfilment that protects your shop rating</b> — every order monitored.</li>
+      <li><b>Shop health monitoring</b> that never clocks out.</li>
+    </ul>
+    <p style="margin-top:36px"><a href="contact.html" class="btn btn-solid">Book a Free Strategy Call →</a></p>
+  </div>
+</section>
+
+<!-- WALMART -->
+<section class="svc-block" id="walmart">
+  <div class="wrap">
+    <div class="svc-top reveal">
+      <div>
+        <p class="eyebrow">Marketplace · 03</p>
+        <h2>Walmart Marketplace Scaling</h2>
+      </div>
+      <p class="lede">120 million monthly buyers and a fraction of Amazon's competition. The brands figuring this out now are getting in before the crowd arrives — EVONCORE puts you in that group.</p>
+    </div>
+    <div class="svc-stats reveal">
+      <div class="s"><span class="n">$6M+</span><span class="l">Revenue generated</span></div>
+      <div class="s"><span class="n">5x</span><span class="l">Growth / 6 months</span></div>
+      <div class="s"><span class="n">3x</span><span class="l">Lower ad costs vs Amazon</span></div>
+      <div class="s"><span class="n">85%</span><span class="l">Page-1 within 90 days</span></div>
+      <div class="s"><span class="n">60%</span><span class="l">Conversion lift</span></div>
+      <div class="s"><span class="n">72hr</span><span class="l">To first optimizations</span></div>
+    </div>
+    <div class="mini-process reveal">
+      <div class="mp"><span class="k">01</span><h4>Marketplace audit</h4><p>Where your product sits, which categories are underserved, which keywords convert.</p></div>
+      <div class="mp"><span class="k">02</span><h4>Account & catalogue setup</h4><p>Catalogue structure, pricing, fulfilment and brand profile, built for the algorithm and the customer.</p></div>
+      <div class="mp"><span class="k">03</span><h4>Visibility, conversion, velocity</h4><p>Walmart Connect ads plus organic ranking signals working together.</p></div>
+      <div class="mp"><span class="k">04</span><h4>Scale the full catalogue</h4><p>New SKUs, new categories, new keyword opportunities, every month.</p></div>
+    </div>
+    <ul class="incl-list reveal">
+      <li><b>Listings built for high-intent buyers</b> — rich titles, attribute-complete setups.</li>
+      <li><b>A Buy Box strategy</b> built for Walmart's unique mechanics.</li>
+      <li><b>Walmart Connect ads</b> — native campaigns, not copy-pasted Amazon structures.</li>
+      <li><b>Content that earns algorithm trust</b> — rich media, attribute optimization.</li>
+      <li><b>Fulfilment that protects your scorecard</b> — defect, delivery and cancellation rates.</li>
+      <li><b>Review strategy</b> that builds category authority.</li>
+    </ul>
+    <p style="margin-top:36px"><a href="contact.html" class="btn btn-solid">Book a Free Strategy Call →</a></p>
+  </div>
+</section>
+
+<!-- EBAY -->
+<section class="svc-block" id="ebay">
+  <div class="wrap">
+    <div class="svc-top reveal">
+      <div>
+        <p class="eyebrow">Marketplace · 04</p>
+        <h2>eBay Store Management</h2>
+      </div>
+      <p class="lede">eBay is not a garage sale. In the right hands it's a serious business — 135 million active buyers spending real money on new products, every single day.</p>
+    </div>
+    <div class="svc-stats reveal">
+      <div class="s"><span class="n">$5M+</span><span class="l">Revenue generated</span></div>
+      <div class="s"><span class="n">4x</span><span class="l">Growth / 90 days</span></div>
+      <div class="s"><span class="n">99%+</span><span class="l">Feedback score</span></div>
+      <div class="s"><span class="n">80%</span><span class="l">Top Rated within 60d</span></div>
+      <div class="s"><span class="n">55%</span><span class="l">Conversion lift</span></div>
+      <div class="s"><span class="n">72hr</span><span class="l">To first optimizations</span></div>
+    </div>
+    <div class="mini-process reveal">
+      <div class="mp"><span class="k">01</span><h4>Store audit & intelligence</h4><p>Underperforming listings, keyword opportunity, competitor positioning — mapped first.</p></div>
+      <div class="mp"><span class="k">02</span><h4>Store build & catalogue</h4><p>Store design, category structure and pricing, built to satisfy eBay's algorithm.</p></div>
+      <div class="mp"><span class="k">03</span><h4>Visibility, trust, velocity</h4><p>Promoted Listings plus the organic signals that make a store climb on its own.</p></div>
+      <div class="mp"><span class="k">04</span><h4>Scale what works</h4><p>New products, new categories, new pricing angles, reviewed monthly.</p></div>
+    </div>
+    <ul class="incl-list reveal">
+      <li><b>Listings engineered for eBay's algorithm</b> — item specifics, quality score, sell-through.</li>
+      <li><b>A pricing strategy</b> that competes without destroying margin.</li>
+      <li><b>Promoted Listings</b> that pay for themselves.</li>
+      <li><b>A feedback system</b> that sells before a buyer reads the listing.</li>
+      <li><b>Store design that looks like a brand</b>, not a seller.</li>
+      <li><b>Competitor monitoring</b> that keeps you a step ahead.</li>
+    </ul>
+    <p style="margin-top:36px"><a href="contact.html" class="btn btn-solid">Book a Free Strategy Call →</a></p>
+  </div>
+</section>
+
+<!-- SHOPIFY -->
+<section class="svc-block" id="shopify">
+  <div class="wrap">
+    <div class="svc-top reveal">
+      <div>
+        <p class="eyebrow">Owned channel · 05</p>
+        <h2>Shopify Store Management</h2>
+      </div>
+      <p class="lede">Marketplaces rent you visibility. Shopify gives you a direct relationship with your customer, complete control over your brand, and a channel nobody can take away from you.</p>
+    </div>
+    <div class="svc-stats reveal">
+      <div class="s"><span class="n">$10M+</span><span class="l">Revenue generated</span></div>
+      <div class="s"><span class="n">3.5x</span><span class="l">Growth / 6 months</span></div>
+      <div class="s"><span class="n">68%</span><span class="l">Conversion lift</span></div>
+      <div class="s"><span class="n">45%</span><span class="l">Less cart abandonment</span></div>
+      <div class="s"><span class="n">4x</span><span class="l">Avg ROAS</span></div>
+      <div class="s"><span class="n">55%</span><span class="l">Revenue from repeat buyers</span></div>
+    </div>
+    <div class="mini-process reveal">
+      <div class="mp"><span class="k">01</span><h4>Audit & conversion analysis</h4><p>Where buyers drop off and where they should be converting, mapped precisely.</p></div>
+      <div class="mp"><span class="k">02</span><h4>Store & brand architecture</h4><p>Navigation, product pages, checkout and mobile, built around one outcome: purchase.</p></div>
+      <div class="mp"><span class="k">03</span><h4>Traffic, conversion, revenue</h4><p>Meta, Google Shopping and TikTok ads, tested and refined until CAC makes sense.</p></div>
+      <div class="mp"><span class="k">04</span><h4>Retention & brand ownership</h4><p>Email, SMS and loyalty mechanics that turn one-time buyers into a real customer base.</p></div>
+    </div>
+    <ul class="incl-list reveal">
+      <li><b>Store architecture</b> that pulls buyers toward the purchase.</li>
+      <li><b>Product pages that close the sale</b> without a salesperson.</li>
+      <li><b>A checkout</b> that doesn't lose customers who already decided to buy.</li>
+      <li><b>Paid traffic</b> that brings buyers, not just visitors.</li>
+      <li><b>Email & SMS flows</b> that turn one purchase into ten.</li>
+      <li><b>Mobile-first builds</b> and page speed that satisfies Google.</li>
+    </ul>
+    <p style="margin-top:36px"><a href="contact.html" class="btn btn-solid">Book a Free Strategy Call →</a></p>
+  </div>
+</section>
+
+<!-- ADS -->
+<section class="svc-block" id="ads">
+  <div class="wrap">
+    <div class="svc-top reveal">
+      <div>
+        <p class="eyebrow">Growth · 06</p>
+        <h2>Paid Advertising</h2>
+      </div>
+      <p class="lede">Your competitors aren't outselling you because they have a better product. In most cases, they're winning because their advertising is structured better. EVONCORE builds revenue systems across Meta, Google, TikTok and Amazon.</p>
+    </div>
+    <div class="mini-process reveal">
+      <div class="mp"><span class="k">01</span><h4>Audit & competitor intel</h4><p>Every campaign, ad set and creative torn apart before a dollar is spent.</p></div>
+      <div class="mp"><span class="k">02</span><h4>Strategy & architecture</h4><p>Full-funnel campaigns built around profitable customer acquisition.</p></div>
+      <div class="mp"><span class="k">03</span><h4>Launch, test, learn fast</h4><p>Multiple creative angles tested simultaneously; the first 30 days find what works.</p></div>
+      <div class="mp"><span class="k">04</span><h4>Scale what wins</h4><p>Budget moves to what converts, weekly — no autopilot, no emotional attachment.</p></div>
+    </div>
+    <ul class="incl-list reveal">
+      <li><b>Meta Ads</b> — full-funnel, creative tested continuously.</li>
+      <li><b>Google Ads</b> — Shopping & Search built for buyers already searching.</li>
+      <li><b>TikTok Ads</b> — native creative, Spark Ads, Shopping Ads.</li>
+      <li><b>Amazon Ads</b> — PPC that builds sales velocity and organic ranking.</li>
+      <li><b>Creative strategy</b> built around your buyer's language and objections.</li>
+      <li><b>Attribution & tracking</b> rebuilt so decisions reflect reality.</li>
+    </ul>
+    <p style="margin-top:36px"><a href="contact.html" class="btn btn-solid">Get a Free Ad Account Audit →</a></p>
+  </div>
+</section>
+
+<!-- SOURCING -->
+<section class="svc-block" id="sourcing">
+  <div class="wrap">
+    <div class="svc-top reveal">
+      <div>
+        <p class="eyebrow">Operations · 07</p>
+        <h2>Product Sourcing</h2>
+      </div>
+      <p class="lede">The right product, at the right price, from the right supplier changes everything. We find, vet, negotiate and manage the supplier relationships your margins depend on.</p>
+    </div>
+    <div class="mini-process reveal">
+      <div class="mp"><span class="k">01</span><h4>Product & market analysis</h4><p>Target price, required margin, quality standards and growth trajectory, mapped first.</p></div>
+      <div class="mp"><span class="k">02</span><h4>Supplier ID & vetting</h4><p>Manufacturers and trading companies across China, India, Vietnam, Turkey and domestic markets — rigorously vetted.</p></div>
+      <div class="mp"><span class="k">03</span><h4>Negotiation & terms</h4><p>Price, MOQ, payment terms, lead times and exclusivity — negotiated together.</p></div>
+      <div class="mp"><span class="k">04</span><h4>Sampling & quality control</h4><p>Pre-shipment inspections so your first order — and every order after — arrives right.</p></div>
+    </div>
+    <ul class="incl-list reveal">
+      <li><b>Supplier identification</b> beyond the first search result.</li>
+      <li><b>Vetting</b> that stops the most expensive mistake in ecommerce before it happens.</li>
+      <li><b>Negotiation</b> that recovers margin most brands leave on the table.</li>
+      <li><b>Supply chain redundancy</b> — backup suppliers for every critical product.</li>
+      <li><b>Documentation & compliance</b> handled end to end.</li>
+      <li><b>No commissions</b> — our only incentive is your best possible deal.</li>
+    </ul>
+    <p style="margin-top:36px"><a href="contact.html" class="btn btn-solid">Get a Free Sourcing Consultation →</a></p>
+  </div>
+</section>
+
+<!-- FULFILMENT -->
+<section class="svc-block" id="fulfilment">
+  <div class="wrap">
+    <div class="svc-top reveal">
+      <div>
+        <p class="eyebrow">Operations · 08</p>
+        <h2>Fulfilment</h2>
+      </div>
+      <p class="lede">Your marketing brings them in. Your fulfilment decides whether they stay. EVONCORE manages warehousing, pick and pack, shipping, returns and carrier relationships — every order, on time.</p>
+    </div>
+    <div class="mini-process reveal">
+      <div class="mp"><span class="k">01</span><h4>Fulfilment audit</h4><p>Order accuracy, shipping times, carrier performance and cost per order — assessed in full.</p></div>
+      <div class="mp"><span class="k">02</span><h4>Infrastructure setup</h4><p>Warehouse location, carrier mix and packaging, built for your customer geography.</p></div>
+      <div class="mp"><span class="k">03</span><h4>Go live</h4><p>Catalogue onboarded, channels integrated, first orders accurate from day one.</p></div>
+      <div class="mp"><span class="k">04</span><h4>Continuous optimization</h4><p>Daily monitoring and rate renegotiation as volume grows.</p></div>
+    </div>
+    <ul class="incl-list reveal">
+      <li><b>Warehousing</b> placed where your customers actually are.</li>
+      <li><b>Pick and pack</b> with barcode verification that eliminates errors.</li>
+      <li><b>Carrier management</b> — better rates, monitored delivery performance.</li>
+      <li><b>Returns management</b> that protects margin and the relationship.</li>
+      <li><b>Real-time inventory</b> across every sales channel.</li>
+      <li><b>Marketplace compliance</b> that protects your seller metrics.</li>
+    </ul>
+    <p style="margin-top:36px"><a href="contact.html" class="btn btn-solid">Get a Free Fulfilment Audit →</a></p>
+  </div>
+</section>
+
+<!-- SEO -->
+<section class="svc-block" id="seo" style="border-bottom:none;">
+  <div class="wrap">
+    <div class="svc-top reveal">
+      <div>
+        <p class="eyebrow">Growth · 09</p>
+        <h2>SEO</h2>
+      </div>
+      <p class="lede">Page one or invisible — there's no middle ground on Google. EVONCORE builds the SEO infrastructure that gets your brand in front of buyers already searching for what you sell.</p>
+    </div>
+    <div class="mini-process reveal">
+      <div class="mp"><span class="k">01</span><h4>Technical audit</h4><p>Crawlability, site speed and structural issues fixed before anything else.</p></div>
+      <div class="mp"><span class="k">02</span><h4>Keyword & opportunity mapping</h4><p>Terms buyers use when they're ready to purchase, not just browsing.</p></div>
+      <div class="mp"><span class="k">03</span><h4>On-page & content</h4><p>Every product, collection and category page optimized to rank and convert.</p></div>
+      <div class="mp"><span class="k">04</span><h4>Link building & authority</h4><p>Digital PR and editorial placements — no link farms, no shortcuts.</p></div>
+    </div>
+    <ul class="incl-list reveal">
+      <li><b>Technical SEO</b> that removes every barrier between your site and Google.</li>
+      <li><b>Keyword strategy</b> built around buyers, not browsers.</li>
+      <li><b>Product & category pages</b> built for the algorithm and the buyer.</li>
+      <li><b>Content</b> that makes your site the authority in your category.</li>
+      <li><b>Shopify & Amazon SEO</b> — platform-specific optimization.</li>
+      <li><b>Reporting</b> that connects rankings to revenue.</li>
+    </ul>
+    <p style="margin-top:36px"><a href="contact.html" class="btn btn-solid">Get a Free SEO Audit →</a></p>
+  </div>
+</section>
+
+<section class="statement dark2">
+  <p class="eyebrow" style="justify-content:center">Limited onboarding each month</p>
+  <h2>Ready to find out what your brand is <em>actually</em> capable of?</h2>
+  <p style="max-width:560px;margin:22px auto 0;">One call. A complete picture of where your brand is, where it should be, and exactly how we get it there. No commitment. No sales pressure.</p>
+  <div class="hero-cta" style="justify-content:center;margin-top:36px;">
+    <a href="contact.html" class="btn btn-solid">Book Your Free Strategy Call <span class="btn-arrow">→</span></a>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="wrap">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <img src="assets/logo.png" alt="EVONCORE">
+        <p>We help ambitious brands launch, grow and thrive across Amazon, TikTok Shop, Walmart, eBay, Shopify and Etsy — one operational team, every channel.</p>
+        <div class="platform-chip-row">
+          <span class="platform-chip">Amazon</span>
+          <span class="platform-chip">TikTok Shop</span>
+          <span class="platform-chip">Walmart</span>
+          <span class="platform-chip">eBay</span>
+          <span class="platform-chip">Shopify</span>
+          <span class="platform-chip">Etsy</span>
+        </div>
+      </div>
+      <div class="footer-cols">
+        <div class="footer-col">
+          <h5>Services</h5>
+          <ul>
+            <li><a href="services.html#amazon">Amazon</a></li>
+            <li><a href="services.html#tiktok">TikTok Shop</a></li>
+            <li><a href="services.html#walmart">Walmart</a></li>
+            <li><a href="services.html#shopify">Shopify</a></li>
+            <li><a href="services.html#ads">Paid Advertising</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h5>Company</h5>
+          <ul>
+            <li><a href="about.html">About</a></li>
+            <li><a href="portfolio.html">Results</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h5>Get in touch</h5>
+          <ul>
+            <li><a href="mailto:info@evoncore.com">info@evoncore.com</a></li>
+            <li><a href="https://evoncore.com">evoncore.com</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 EVONCORE. All rights reserved.</span>
+      <span>Built by operators, for ecommerce brands.</span>
+    </div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>

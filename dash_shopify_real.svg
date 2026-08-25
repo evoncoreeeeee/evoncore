@@ -1,0 +1,176 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 750" width="100%" height="100%">
+  <defs>
+    <!-- Dark tech gradient background -->
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0B0F19" />
+      <stop offset="50%" stop-color="#111827" />
+      <stop offset="100%" stop-color="#1E1B4B" />
+    </linearGradient>
+
+    <!-- Card container gradient -->
+    <linearGradient id="cardGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#161F30" />
+      <stop offset="100%" stop-color="#0F172A" />
+    </linearGradient>
+
+    <!-- Total Sales Line Glow -->
+    <linearGradient id="purpleGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#818CF8" />
+      <stop offset="50%" stop-color="#6366F1" />
+      <stop offset="100%" stop-color="#A855F7" />
+    </linearGradient>
+
+    <!-- Net Sales Line Glow -->
+    <linearGradient id="blueGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#38BDF8" />
+      <stop offset="50%" stop-color="#0284C7" />
+      <stop offset="100%" stop-color="#06B6D4" />
+    </linearGradient>
+
+    <!-- Total Sales Area Gradient -->
+    <linearGradient id="purpleArea" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="rgba(99, 102, 241, 0.28)" />
+      <stop offset="100%" stop-color="rgba(99, 102, 241, 0.0)" />
+    </linearGradient>
+
+    <!-- Net Sales Area Gradient -->
+    <linearGradient id="blueArea" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="rgba(14, 165, 233, 0.22)" />
+      <stop offset="100%" stop-color="rgba(14, 165, 233, 0.0)" />
+    </linearGradient>
+
+    <!-- Drop Shadow Filter for Lines -->
+    <filter id="glowPurple" x="-10%" y="-20%" width="130%" height="150%">
+      <feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="#6366F1" flood-opacity="0.6"/>
+    </filter>
+
+    <filter id="glowBlue" x="-10%" y="-20%" width="130%" height="150%">
+      <feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="#0284C7" flood-opacity="0.5"/>
+    </filter>
+  </defs>
+
+  <style>
+    .title { font-family: 'Inter', system-ui, -apple-system, sans-serif; font-size: 22px; font-weight: 600; fill: #F8FAFC; }
+    .legend-label { font-family: 'Inter', system-ui, -apple-system, sans-serif; font-size: 14px; font-weight: 500; fill: #94A3B8; }
+    .metric-val { font-family: 'Inter', system-ui, -apple-system, sans-serif; font-size: 26px; font-weight: 800; fill: #FFFFFF; }
+    .period-text { font-family: 'Inter', system-ui, -apple-system, sans-serif; font-size: 14px; font-weight: 500; fill: #64748B; }
+    .axis-text { font-family: 'Inter', system-ui, -apple-system, sans-serif; font-size: 13px; font-weight: 500; fill: #64748B; }
+    .grid-line { stroke: rgba(255, 255, 255, 0.08); stroke-width: 1; stroke-dasharray: 4, 4; }
+    .solid-line { stroke: rgba(255, 255, 255, 0.15); stroke-width: 1; }
+    .badge { font-family: 'Inter', system-ui, -apple-system, sans-serif; font-size: 12px; font-weight: 600; fill: #A5B4FC; }
+  </style>
+
+  <!-- Background Canvas -->
+  <rect width="1200" height="750" fill="url(#bgGrad)"/>
+
+  <!-- Top Glass Header / Shopify Portal Bar -->
+  <rect x="30" y="24" width="1140" height="48" rx="10" fill="rgba(255, 255, 255, 0.03)" stroke="rgba(255, 255, 255, 0.08)"/>
+  <circle cx="56" cy="48" r="5" fill="#EF4444" opacity="0.8"/>
+  <circle cx="74" cy="48" r="5" fill="#F59E0B" opacity="0.8"/>
+  <circle cx="92" cy="48" r="5" fill="#10B981" opacity="0.8"/>
+  
+  <text x="120" y="53" font-family="'Inter', sans-serif" font-size="13" font-weight="600" fill="#94A3B8">Shopify Analytics · Live Store Portal</text>
+  <rect x="990" y="34" width="160" height="28" rx="14" fill="rgba(99, 102, 241, 0.15)" stroke="rgba(99, 102, 241, 0.3)"/>
+  <circle cx="1006" cy="48" r="4" fill="#10B981"/>
+  <text x="1018" y="53" class="badge">Verified Store Data</text>
+
+  <!-- Main Card Container -->
+  <rect x="30" y="90" width="1140" height="630" rx="16" fill="url(#cardGrad)" stroke="rgba(255, 255, 255, 0.09)"/>
+
+  <!-- Chart Header Info -->
+  <text x="60" y="140" class="title">Net sales and total sales</text>
+
+  <!-- Net Sales Swatch & Metric -->
+  <rect x="60" y="166" width="12" height="12" rx="3" fill="#0284C7"/>
+  <text x="80" y="177" class="legend-label">Net sales</text>
+  <text x="60" y="210" class="metric-val">$22,000.00</text>
+
+  <!-- Total Sales Swatch & Metric -->
+  <circle cx="210" cy="172" r="6" fill="#6366F1"/>
+  <text x="226" y="177" class="legend-label">Total sales</text>
+  <text x="210" y="210" class="metric-val">$23,765.00</text>
+
+  <!-- Divider & Period -->
+  <line x1="390" y1="168" x2="390" y2="210" stroke="rgba(255, 255, 255, 0.15)" stroke-width="1"/>
+  <text x="415" y="193" class="period-text">Reporting Period: August 1 - August 14</text>
+
+  <!-- Right Side Stat Pill -->
+  <rect x="930" y="130" width="210" height="60" rx="12" fill="rgba(16, 185, 129, 0.08)" stroke="rgba(16, 185, 129, 0.25)"/>
+  <text x="950" y="155" font-family="'Inter', sans-serif" font-size="12" font-weight="600" fill="#10B981">14-Day Growth Surge</text>
+  <text x="950" y="178" font-family="'Inter', sans-serif" font-size="18" font-weight="700" fill="#FFFFFF">+113% vs Prev Cycle</text>
+
+  <!-- Grid Lines & Y-Axis Labels -->
+  <text x="60" y="275" class="axis-text">$24k</text>
+  <line x1="110" y1="270" x2="1120" y2="270" class="grid-line"/>
+
+  <text x="60" y="335" class="axis-text">$20k</text>
+  <line x1="110" y1="330" x2="1120" y2="330" class="grid-line"/>
+
+  <text x="60" y="395" class="axis-text">$16k</text>
+  <line x1="110" y1="390" x2="1120" y2="390" class="grid-line"/>
+
+  <text x="60" y="455" class="axis-text">$12k</text>
+  <line x1="110" y1="450" x2="1120" y2="450" class="grid-line"/>
+
+  <text x="60" y="515" class="axis-text">$8k</text>
+  <line x1="110" y1="510" x2="1120" y2="510" class="grid-line"/>
+
+  <text x="60" y="575" class="axis-text">$4k</text>
+  <line x1="110" y1="570" x2="1120" y2="570" class="grid-line"/>
+
+  <text x="60" y="635" class="axis-text">$0k</text>
+  <line x1="110" y1="630" x2="1120" y2="630" class="solid-line"/>
+
+  <!-- Total Sales Area Fill -->
+  <path d="M 120 630 L 120 613.5 C 150 613.5, 170 577.5, 196 577.5 C 220 577.5, 245 565.5, 272 565.5 C 300 565.5, 325 618.0, 348 618.0 C 375 618.0, 400 552.0, 425 552.0 C 450 552.0, 475 610.5, 501 610.5 C 525 610.5, 550 615.0, 577 615.0 C 605 615.0, 630 513.0, 653 513.0 C 680 513.0, 705 594.0, 729 594.0 C 755 594.0, 780 561.0, 805 561.0 C 830 561.0, 855 556.5, 882 556.5 C 910 556.5, 935 610.5, 958 610.5 C 985 610.5, 1010 511.5, 1034 511.5 C 1060 511.5, 1085 574.5, 1110 574.5 L 1110 630 Z" fill="url(#purpleArea)"/>
+
+  <!-- Net Sales Area Fill -->
+  <path d="M 120 630 L 120 616.5 C 150 616.5, 170 589.5, 196 589.5 C 220 589.5, 245 579.0, 272 579.0 C 300 579.0, 325 619.5, 348 619.5 C 375 619.5, 400 565.5, 425 565.5 C 450 565.5, 475 615.0, 501 615.0 C 525 615.0, 550 618.0, 577 618.0 C 605 618.0, 630 532.5, 653 532.5 C 680 532.5, 705 601.5, 729 601.5 C 755 601.5, 780 582.0, 805 582.0 C 830 582.0, 855 571.5, 882 571.5 C 910 571.5, 935 615.0, 958 615.0 C 985 615.0, 1010 531.0, 1034 531.0 C 1060 531.0, 1085 586.5, 1110 586.5 L 1110 630 Z" fill="url(#blueArea)"/>
+
+  <!-- Net Sales Curve Line (Cyan / Blue) -->
+  <path d="M 120 616.5 C 150 616.5, 170 589.5, 196 589.5 C 220 589.5, 245 579.0, 272 579.0 C 300 579.0, 325 619.5, 348 619.5 C 375 619.5, 400 565.5, 425 565.5 C 450 565.5, 475 615.0, 501 615.0 C 525 615.0, 550 618.0, 577 618.0 C 605 618.0, 630 532.5, 653 532.5 C 680 532.5, 705 601.5, 729 601.5 C 755 601.5, 780 582.0, 805 582.0 C 830 582.0, 855 571.5, 882 571.5 C 910 571.5, 935 615.0, 958 615.0 C 985 615.0, 1010 531.0, 1034 531.0 C 1060 531.0, 1085 586.5, 1110 586.5" fill="none" stroke="url(#blueGrad)" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round" filter="url(#glowBlue)"/>
+
+  <!-- Total Sales Curve Line (Purple / Indigo) -->
+  <path d="M 120 613.5 C 150 613.5, 170 577.5, 196 577.5 C 220 577.5, 245 565.5, 272 565.5 C 300 565.5, 325 618.0, 348 618.0 C 375 618.0, 400 552.0, 425 552.0 C 450 552.0, 475 610.5, 501 610.5 C 525 610.5, 550 615.0, 577 615.0 C 605 615.0, 630 513.0, 653 513.0 C 680 513.0, 705 594.0, 729 594.0 C 755 594.0, 780 561.0, 805 561.0 C 830 561.0, 855 556.5, 882 556.5 C 910 556.5, 935 610.5, 958 610.5 C 985 610.5, 1010 511.5, 1034 511.5 C 1060 511.5, 1085 574.5, 1110 574.5" fill="none" stroke="url(#purpleGrad)" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" filter="url(#glowPurple)"/>
+
+  <!-- Data Point Badges at Peaks -->
+  <circle cx="653" cy="513.0" r="5" fill="#A855F7" stroke="#FFFFFF" stroke-width="2"/>
+  <circle cx="653" cy="532.5" r="4.5" fill="#38BDF8" stroke="#FFFFFF" stroke-width="2"/>
+  <rect x="618" y="475" width="70" height="24" rx="6" fill="#1E1B4B" stroke="#818CF8"/>
+  <text x="653" y="491" font-family="'Inter', sans-serif" font-size="11" font-weight="700" fill="#FFFFFF" text-anchor="middle">$7.8k</text>
+
+  <circle cx="1034" cy="511.5" r="5" fill="#A855F7" stroke="#FFFFFF" stroke-width="2"/>
+  <circle cx="1034" cy="531.0" r="4.5" fill="#38BDF8" stroke="#FFFFFF" stroke-width="2"/>
+  <rect x="999" y="475" width="70" height="24" rx="6" fill="#1E1B4B" stroke="#818CF8"/>
+  <text x="1034" y="491" font-family="'Inter', sans-serif" font-size="11" font-weight="700" fill="#FFFFFF" text-anchor="middle">$7.9k</text>
+
+  <!-- X-Axis Labels & Tick Marks -->
+  <line x1="120" y1="630" x2="120" y2="638" class="solid-line"/>
+  <text x="120" y="660" class="axis-text" text-anchor="middle">Aug 1</text>
+  <line x1="196" y1="630" x2="196" y2="638" class="solid-line"/>
+  <text x="196" y="660" class="axis-text" text-anchor="middle">Aug 2</text>
+  <line x1="272" y1="630" x2="272" y2="638" class="solid-line"/>
+  <text x="272" y="660" class="axis-text" text-anchor="middle">Aug 3</text>
+  <line x1="348" y1="630" x2="348" y2="638" class="solid-line"/>
+  <text x="348" y="660" class="axis-text" text-anchor="middle">Aug 4</text>
+  <line x1="425" y1="630" x2="425" y2="638" class="solid-line"/>
+  <text x="425" y="660" class="axis-text" text-anchor="middle">Aug 5</text>
+  <line x1="501" y1="630" x2="501" y2="638" class="solid-line"/>
+  <text x="501" y="660" class="axis-text" text-anchor="middle">Aug 6</text>
+  <line x1="577" y1="630" x2="577" y2="638" class="solid-line"/>
+  <text x="577" y="660" class="axis-text" text-anchor="middle">Aug 7</text>
+  <line x1="653" y1="630" x2="653" y2="638" class="solid-line"/>
+  <text x="653" y="660" class="axis-text" text-anchor="middle">Aug 8</text>
+  <line x1="729" y1="630" x2="729" y2="638" class="solid-line"/>
+  <text x="729" y="660" class="axis-text" text-anchor="middle">Aug 9</text>
+  <line x1="805" y1="630" x2="805" y2="638" class="solid-line"/>
+  <text x="805" y="660" class="axis-text" text-anchor="middle">Aug 10</text>
+  <line x1="882" y1="630" x2="882" y2="638" class="solid-line"/>
+  <text x="882" y="660" class="axis-text" text-anchor="middle">Aug 11</text>
+  <line x1="958" y1="630" x2="958" y2="638" class="solid-line"/>
+  <text x="958" y="660" class="axis-text" text-anchor="middle">Aug 12</text>
+  <line x1="1034" y1="630" x2="1034" y2="638" class="solid-line"/>
+  <text x="1034" y="660" class="axis-text" text-anchor="middle">Aug 13</text>
+  <line x1="1110" y1="630" x2="1110" y2="638" class="solid-line"/>
+  <text x="1110" y="660" class="axis-text" text-anchor="middle">Aug 14</text>
+</svg>
